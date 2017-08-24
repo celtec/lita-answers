@@ -8,9 +8,9 @@ module Lita
       ANSWER = /(?:'|")(#{TEXT.source}\.?)(?:'|")/
 
 
-      route(/^(\w+)([\.#]|::)?(\w+)?$/, :documentation, command: true, help: {
-        "Array#map" => "# Array#map\n\n(from ruby core)\n---\n    ary.collect { |item| block }  -> new_ary\n..."
-      })
+      #route(/^(\w+)([\.#]|::)?(\w+)?$/, :documentation, command: true, help: {
+      #  "Array#map" => "# Array#map\n\n(from ruby core)\n---\n    ary.collect { |item| block }  -> new_ary\n..."
+      #})
 
       route(/^all\squestions$/i, :index, command: true, help: {
         "all questions" => "You could ask me the following questions: 1) ... 2) ..."
